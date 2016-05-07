@@ -50,9 +50,10 @@ function exitFullscreen() {
 exitFullscreen();
 ```
 
+### 注意事项
 > Note that exitFullscreen is called on the document object only -- not needing to pass the individual element itself.
 
-> Fullscreen Properties & Events
+## 属性和事件
 > Unfortunately the events and properties are still prefixed, but will be unprefixed over time.
 
 ``` javascript
@@ -64,6 +65,7 @@ var fullscreenElement = document.fullscreenElement || document.mozFullScreenElem
 var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
 ```
 
+## 相关样式设置
 > Fullscreen CSS
 > Browsers do provide us one helpful bit of fullscreen CSS control:
 ``` CSS
