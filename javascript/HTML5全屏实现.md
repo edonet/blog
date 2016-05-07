@@ -68,8 +68,9 @@ var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnab
 ## 相关样式设置
 > Fullscreen CSS
 > Browsers do provide us one helpful bit of fullscreen CSS control:
-``` CSS
 
+
+``` CSS
 :-webkit-full-screen {
   -- properties --
 }
@@ -90,13 +91,13 @@ var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnab
   -- properties --
 }
 
-# deeper elements
+/* deeper elements */
 :-webkit-full-screen video {
   width: 100%;
   height: 100%;
 }
 
-# styling the backdrop
+/* styling the backdrop */
 ::backdrop {
   -- properties --
 }
