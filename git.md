@@ -36,11 +36,13 @@
 ## 分支操作
 ~~~ cmd
     $ git branch # 查看分支状态
+    $ git branch -a # 查看所有（包括远程）分支
     $ git branch <branch name> # 创建分支
     $ git checkout <branch name> # 切换到指定分支
     $ git chekcout –b <branch name> # 创建并切换到指定分支
     $ git merge <branch name> # 将指定分支合并到当前分支
     $ git branch –d <branch name> # 删除指定分支
+    $ git push origin :<branch name> # 删除远程分支
 ~~~
 
 ## 版本回退
