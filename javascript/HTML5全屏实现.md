@@ -71,6 +71,8 @@ var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnab
 
 
 ``` CSS
+
+/* style full screen */
 :-webkit-full-screen {
   -- properties --
 }
