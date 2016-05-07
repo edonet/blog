@@ -83,7 +83,7 @@ console.log('hello world!');
 function add(a, b){
     return a + b;
 }
- ```
+``` javascript
 ```
 
 ## 分割线
