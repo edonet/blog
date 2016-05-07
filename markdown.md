@@ -72,7 +72,7 @@ _这是斜体文字_
 
 ## 代码
 只需要用两个把中间的代码包裹起来，如 \`code\`
-``` markdown
+```` markdown
 `
 // 这是行代码
 console.log('hello world!');
@@ -83,8 +83,8 @@ console.log('hello world!');
 function add(a, b){
     return a + b;
 }
-\```
 ```
+````
 
 ## 分割线
 分割线的语法只需要另起一行，连续输入三个星号 *** 或者三个下划线 ___ 即可
