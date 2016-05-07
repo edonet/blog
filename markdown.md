@@ -77,14 +77,7 @@ _这是斜体文字_
 // 这是行代码
 console.log('hello world!');
 `
-
-``` javascript
-// 这是块代码
-function add(a, b){
-    return a + b;
-}
 ```
-````
 
 ## 分割线
 分割线的语法只需要另起一行，连续输入三个星号 *** 或者三个下划线 ___ 即可
