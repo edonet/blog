@@ -2,8 +2,7 @@
 常用到的WEB工具收集
 
 ## 贝塞尔曲线制作工具
-[cubic-bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
+* [cubic-bezier](http://cubic-bezier.com/#.17,.67,.83,.67)
 轻松制作CSS3贝塞尔缓动曲线
-
-[jQuery Easing](http://www.xuanfengge.com/easeing/easeing/)
+* [jQuery Easing](http://www.xuanfengge.com/easeing/easeing/)
 速查工具
