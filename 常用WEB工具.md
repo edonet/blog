@@ -6,3 +6,6 @@
 轻松制作CSS3贝塞尔缓动曲线
 * [jQuery Easing](http://www.xuanfengge.com/easeing/easeing/)
 速查工具
+
+## 函数曲线图像绘制工具
+* [graph](http://graph.tk/)强大的函数曲线绘制工具
