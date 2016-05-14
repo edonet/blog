@@ -45,6 +45,14 @@
     $ git push origin :<branch name> # 删除远程分支
 ```
 
+## 标签操作
+``` sh
+    $ git tag # 列出所有标签
+    $ git tag <version> # 设置版本标签
+    $ git tag -d <version> # 删除版本标签
+    $ git push tags # 同步所有标签至远程库
+```
+
 ## 版本回退
 ``` sh
     $ git reset <commit id> # 回退到指定的版本
