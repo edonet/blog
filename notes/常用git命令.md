@@ -50,7 +50,8 @@
     $ git tag # 列出所有标签
     $ git tag <version> # 设置版本标签
     $ git tag -d <version> # 删除版本标签
-    $ git push tags # 同步所有标签至远程库
+    $ git push --tags # 同步所有标签至远程库
+    $ git push origin --tags # 同步所有标签至远程库
 ```
 
 ## 版本回退

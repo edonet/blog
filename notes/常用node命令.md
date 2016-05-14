@@ -43,6 +43,8 @@
     $ npm -v # 查看当前npm的版本
     $ npm cache ls # 显示所有缓存文件夹
     $ npm cache clean -f # 清除npm的缓存
+    $ npm config set registry https://registry.npm.taobao.org # 设置远程镜像为国内淘宝库
+    $ npm config set registry http://registry.npmjs.org # 还原远程镜像库
 ```
 
 ## repl 操作
