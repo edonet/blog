@@ -45,6 +45,8 @@
     $ npm cache clean -f # 清除npm的缓存
     $ npm config set registry https://registry.npm.taobao.org # 设置远程镜像为国内淘宝库
     $ npm config set registry http://registry.npmjs.org # 还原远程镜像库
+    $ npm adduser # 添加npm账户
+    $ npm publish # 发布当前模块
 ```
 
 ## repl 操作
