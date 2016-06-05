@@ -1,6 +1,16 @@
 # git 常用操作
 记录一些常用的git操作命令，以备不时之需。
 
+## 初始配置
+``` sh
+    $ git config --global user.name "edonet" # 配置用户名
+    $ git config --global user.email "edonet@163.com" # 配置用户邮箱
+    $ git config --global color.ui auto # 配置是否开启UI配色
+    $ git config --unset --global <user.name> # 删除配置项
+    $ git config --list # 显示所有配置项
+    $ ssh-keygen -t rsa -C "edonet@163.com" # 生成ssh密钥
+```
+
 ## 代码库操作
 ``` sh
     $ git init # 初始化一个本地库
