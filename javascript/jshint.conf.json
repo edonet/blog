@@ -9,7 +9,10 @@
     "eqeqeq": true,
 
     // 兼容低级浏览器 IE 6/7/8/9
-    "es3": true,
+    "esversion": 3,
+
+    // 要求所有 for in循环过滤对象的原型属性
+    "forin": true,
 
     // 禁止重写原生对象的原型，比如 Array ， Date
     "freeze": true,
@@ -45,7 +48,7 @@
     "maxdepth": 4,
 
     // 复杂度检测
-    "maxcomplexity": true,
+    "maxcomplexity": false,
 
     // 最大行数
     "maxlen": 600,
