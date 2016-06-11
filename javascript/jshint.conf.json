@@ -9,13 +9,19 @@
     "eqeqeq": true,
 
     // 兼容低级浏览器 IE 6/7/8/9
-    "esversion": 3,
+    "esversion": 6,
 
     // 要求所有 for in循环过滤对象的原型属性
     "forin": true,
 
     // 禁止重写原生对象的原型，比如 Array ， Date
     "freeze": true,
+
+    // 禁止从外部访问内部声明的变量
+    "funcscope": true,
+
+    // 允许警告js未来版本中定义的标识符。
+    "futurehostile": true,
 
     // 代码缩进
     "indent": true,
@@ -29,6 +35,9 @@
     // 禁止使用 arguments.caller 和 arguments.callee ，未来会被弃用， ECMAScript 5 禁止使用 arguments.callee
     "noarg": true,
 
+    // 检查无效 typeof操作符的值
+    "notypeof": true,
+
     // 为 true 时，禁止单引号和双引号混用
     "quotmark": false,
 
@@ -37,6 +46,9 @@
 
     // 变量未使用
     "unused": true,
+
+    // 检查变量重复定义
+    "shadow": "inner",
 
     // 严格模式
     "strict": true,
