@@ -75,6 +75,9 @@
     // 控制 eval 使用警告
     "evil": true,
 
+    // 禁止使用表达式
+    "expr": true,
+
     // 检查一行代码最后声明后面的分号是否遗漏
     "lastsemic": true,
 
