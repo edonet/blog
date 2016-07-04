@@ -18,7 +18,7 @@ function isSupportSVG(){
 ## Canvas支持检测
 ``` javascript
 function isSupportCanvas(){
-    return !! document.createElement('canvas').getContext
+    return !! document.createElement('canvas').getContext;
 }
 ```
 
