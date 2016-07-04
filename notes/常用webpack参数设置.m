@@ -127,14 +127,39 @@
      *  ---------------------------------------------------------------------------------
      *  extensions：["", ".webpack.js", ".web.js", ".js"]
      *  ---------------------------------------------------------------------------------
+     * 【resolve.fallback】: 当找不到模块时，到指定目录内找
+     *  ---------------------------------------------------------------------------------
+     *  fallback: path.join(__dirname, "node_modules")
      */
     resolve: {
-        extensions: ['', '.js', '.jsx', '.es6', 'css'],
         alias: {
             'react-dom': '/react-dom/dist/react-dom',
             'redux': '/redux/dist/redux'
-        }
+        },
+        extensions: ['', '.js', '.jsx', '.es6', 'css'],
+        fallback: path.join(__dirname, "node_modules")
     }
+    /*
+     **************************
+     * 配置模块加载器解析设置
+     **************************
+     *  ---------------------------------------------------------------------------------
+     * 【resolveLoader.fallback】: 当找不到模块时，到指定目录内找
+     *  ---------------------------------------------------------------------------------
+     *  fallback: path.join(__dirname, "node_modules")
+     */
+    resolveLoader: {
+        fallback: path.join(__dirname, "node_modules")
+    },
+    /*
+     **************************
+     * 插件配置
+     **************************
+     *  ---------------------------------------------------------------------------------
+     * 【plugins】: 插件数组
+     *  ---------------------------------------------------------------------------------
+     *  plugins: [...plugin]
+     */
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
