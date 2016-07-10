@@ -1,0 +1,137 @@
+/**
+ *********************************************
+ * Preferences：为 Sublime Text 基本配置
+ *********************************************
+ * 作者：lifx
+ * 日期：2016-07-10
+ * 描述：
+ *     1. 此文件只提供基本设置
+ *     2. 如有疑问可联系作者
+ */
+
+{
+    // 代码提示
+    "auto_complete": true,
+
+    // 触发代码提示
+    "auto_complete_triggers": [
+        {
+            "selector": "text.html",
+            "characters": "< "
+        },
+        {
+            "characters": "< ",
+            "selector": "text.svg"
+        },
+        {
+            "characters": "@: ",
+            "selector": "source.css"
+        },
+        {
+            "characters": "@: ",
+            "selector": "source.sass"
+        }
+    ],
+
+    // 自动匹配引号，括号等
+    "auto_match_enabled": true,
+
+    // 开启选中范围内搜索
+    "auto_find_in_selection": true,
+
+    // 侧边栏文件夹显示加粗，区别于文件
+    "bold_folder_labels": false,
+
+    // 当没有打开的文件时关闭Sublime Text
+    "close_windows_when_empty": false,
+
+    // 主题颜色
+    "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+
+    // 禁用 Emmet 的 tab 键功能
+    "disable_tab_abbreviations": true,
+
+    // 右侧代码预览时给所在区域加上边框
+    "draw_minimap_border": false,
+
+    // 默认编码格式
+    "default_encoding": "UTF-8",
+
+    // 使用 unix 风格的换行符
+    "default_line_ending": "unix",
+
+    // 文件末尾自动保留一个空行
+    "ensure_newline_at_eof_on_save": true,
+
+    // 保存时将tab转化为空格(配合expand_tabs_on_save插件)
+    "expand_tabs_on_save": true,
+
+    // 显示行号右侧的代码段闭合展开三角号
+    "fade_fold_buttons": false,
+
+    //字体大小
+    "font_size": 12,
+
+    // 字体设置
+    "font_face": "Microsoft YaHei Mono",
+
+    // 是否显示代码折叠按钮
+    "fold_buttons": true,
+
+    // 当前行高亮
+    "highlight_line": true,
+
+    // 高亮未保存文件。
+    "highlight_modified_tabs": false,
+
+    //删除你想要忽略的插件
+    "ignored_packages": [ "Vintage", "YUI Compressor" ],
+
+    // 设置每一行到顶部，以像素为单位的间距，效果相当于行距
+    "line_padding_top": 2,
+
+    // 设置每一行到底部，以像素为单位的间距，效果相当于行距
+    "line_padding_bottom": 2,
+
+    // html和xml下突出显示光标所在标签的两端，影响HTML、XML、CSS等
+    "match_tags": true,
+
+    // 是否特殊显示当前光标所在的括号、代码头尾闭合标记
+    "match_brackets": true,
+
+    // 禁止新窗口打开文档
+    "open_files_in_new_window": false,
+
+    // 记住全屏
+    "remember_full_screen": true,
+
+    // 窗口失焦立即保存文件
+    "save_on_focus_lost": true,
+
+    // 在右下角显示文件编码
+    "show_encoding": true,
+
+    // 在右下角显示结束符编码
+    "show_line_endings": true,
+
+    // 设置空格数
+    "tab_size": 4,
+
+    // 把代码 tab 对齐转换为空格对齐
+    "translate_tabs_to_spaces": true,
+
+    // 自动移除行尾多余空格
+    "trim_trailing_white_space_on_save": true,
+
+    // 左边边栏文件夹动画
+    "tree_animation_enabled": true,
+
+    //检查更新
+    "update_check": true,
+
+    // 开启全屏
+    "use_simple_full_screen": true,
+
+    // 设置自动换行
+    "word_wrap": "true",
+}
