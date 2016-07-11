@@ -59,7 +59,7 @@
     "bitwise": true,
 
     // 使用驼峰命名(camelCase)或全大写下划线命名(UPPER_CASE)
-    "camelcase": true,
+    "camelcase": false,
 
     // 循环或者条件语句必须使用花括号包围
     "curly": true,
@@ -94,9 +94,6 @@
 
     // 禁止定义之前使用变量，忽略 function 函数声明
     "latedef": "nofunc",
-
-    //函数中最大语句数
-    "maxstatement": 200,
 
     // 构造器函数首字母大写
     "newcap": true,
