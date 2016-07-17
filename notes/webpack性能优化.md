@@ -10,9 +10,9 @@ webpack --entry ./entry.js --output-path dist --output-file bundle.js \
 --display-modules
 ```
 命令包含3个参数，其各自的含义如下：
-> --colors 输出结果带彩色，比如：会用红色显示耗时较长的步骤
-> --profile 输出性能数据，可以看到每一步的耗时
-> --display-modules 默认情况下 node_modules 下的模块会被隐藏，加上这个参数可以显示这些被隐藏的模块
+>   --colors 输出结果带彩色，比如：会用红色显示耗时较长的步骤
+>   --profile 输出性能数据，可以看到每一步的耗时
+>   --display-modules 默认情况下 node_modules 下的模块会被隐藏，加上这个参数可以显示这些被隐藏的模块
 通过分析所有细节，可知道打包的性能瓶颈所在
 
 ## 在Webpack中使用别名
@@ -50,7 +50,7 @@ Webpack 可以使用 externals 声明外部依赖，这样可以将一些公用�
 ## 总结
 
 以上是常用的解决Webpack性能问题的步骤：
-1. 使用--display-modules和--profile两个参数展示打包细节，分析瓶颈。
-2. 使用resolve.alias（即别名）做重定向，减少模块路径解析。
-3. 作用module.noParse忽略某些模块的解析。
-4. 作用externals定义外部依赖方法来使用公用CDN。
+    1. 使用--display-modules和--profile两个参数展示打包细节，分析瓶颈。
+    2. 使用resolve.alias（即别名）做重定向，减少模块路径解析。
+    3. 作用module.noParse忽略某些模块的解析。
+    4. 作用externals定义外部依赖方法来使用公用CDN。
