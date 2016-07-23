@@ -176,7 +176,7 @@
         "quotes": [2, "single"],
 
         // jsx 属性使用双引号
-        "jsx-quotes": [2, "prefer-single"],
+        "jsx-quotes": [2, "prefer-double"],
 
         // 换行符风格
         "linebreak-style": [1, "unix"],
