@@ -1,0 +1,297 @@
+/**
+ *********************************************
+ * .eshint文件：为eshint插件配置基本选项
+ *********************************************
+ * 作者：lifx
+ * 日期：2016-07-10
+ * 描述：
+ *     1. 此文件只提供基本设置
+ *     2. 如在项目中需要忽略校验，请参考说明一
+ *     3. 如在项目中需要重置配置，请参考说明二
+ *     4. 如有疑问可参考：http://eslint.org/docs/rules/，或联系作者
+ */
+
+
+/**
+ *********************************************
+ * 说明一：如何忽略不需要校验的代码段
+ *********************************************
+ * 描述：
+ *     1. 将需要忽略的代码段包含在【eslint-disable】和【eslint-enable】之间
+ *     2. 在需要忽略的代码行后添加【eslint-disable-line】
+ *     3. 在需要忽略的代码行前一行添加【eslint-disable-next-line】
+ */
+
+/* eslint-disable */
+/* 需要忽略的代码段落 */
+/* eslint-enable */
+
+/*
+   需要忽略的代码行 // eslint-disable-line
+
+   // eslint-disable-next-line
+   需要忽略的代码行
+*/
+
+
+/**
+ *********************************************
+ * 说明二：如何在项目中重置校验配置
+ *********************************************
+ * 描述：在需要重置配置的代码段前插入eslint配置注解
+ */
+
+/* 忽略eslint配置项 */
+/* eslint-disable no-alert, no-console */
+/* 需要忽略配置的代码段 */
+/* eslint-enable no-alert, no-console */
+
+/* 重置eslint基本配置 */
+/* eslint eqeqeq: 0, curly: 2 */
+/* 需要重置配置的代码段 */
+
+/* 申明已经定义过的全局变量 */
+/* global var1, var2 */
+/* 包含此全局变量的代码段 */
+
+
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "commonjs": true,
+        "amd": true,
+        "worker": true
+    },
+
+    "globals": {
+        "$": true
+    },
+
+
+    "parserOptions": {
+
+        //指定ECMAScript支持的版本，6为ES6
+        "ecmaVersion": 6,
+
+        //指定来源的类型，有两种”script”或”module”
+        "sourceType": "module",
+
+        "ecmaFeatures": {
+            // 支持jsx文件
+            "jsx": true,
+
+            // 默认严格模式
+            "impliedStrict": true,
+
+            // lambda表达式
+            "arrowFunctions": true,
+
+            // 解构赋值
+            "destructuring": true,
+
+            // class
+            "classes": true,
+
+            // http://es6.ruanyifeng.com/#docs/function#函数参数的默认值
+            "defaultParams": true,
+
+            // 块级作用域，允许使用let const
+            "blockBindings": true,
+
+            // 允许使用模块，模块内默认严格模式
+            "modules": true,
+
+            // 允许字面量定义对象时，用表达式做属性名
+            // http://es6.ruanyifeng.com/#docs/object #属性名表达式
+            "objectLiteralComputedProperties": true,
+
+            // 允许对象字面量方法名简写
+            /*
+                var o = {
+                    method() {
+                        return "Hello!";
+                    }
+                };
+
+                等同于
+
+                var o = {
+                    method: function() {
+                        return "Hello!";
+                    }
+                };
+            */
+            "objectLiteralShorthandMethods": true,
+
+            /*
+                对象字面量属性名简写
+                var foo = 'bar';
+                var baz = {foo};
+                baz // {foo: "bar"}
+
+                // 等同于
+                var baz = {foo: foo};
+            */
+            "objectLiteralShorthandProperties": true,
+
+            // http://es6.ruanyifeng.com/#docs/function#rest参数
+            "restParams": true,
+
+            // http://es6.ruanyifeng.com/#docs/function#扩展运算符
+            "spread": true,
+
+            // http://es6.ruanyifeng.com/#docs/iterator#for---of循环
+            "forOf": true,
+
+            // http://es6.ruanyifeng.com/#docs/generator
+            "generators": true,
+
+            // http://es6.ruanyifeng.com/#docs/string#模板字符串
+            "templateStrings": true,
+            "superInFunctions": true,
+
+            // http://es6.ruanyifeng.com/#docs/object#对象的扩展运算符
+            "experimentalObjectRestSpread": true
+        }
+    },
+
+
+    "rules": {
+
+        // 严格模式
+        "strict": [0, "safe"],
+
+        // 循环或者条件语句必须使用花括号包围
+        "curly": 1,
+
+        // 双峰驼命名格式
+        "camelcase": 2,
+
+        // 强制使用三等号
+        "eqeqeq": 1,
+
+        // 使用单引号
+        "quotes": [2, "single"],
+
+        // jsx 属性使用双引号
+        "jsx-quotes": [2, "prefer-single"],
+
+        // 换行符风格
+        "linebreak-style": [1, "unix"],
+
+        // 使用未定义的变量
+        "no-use-before-define": [2, "nofunc"],
+
+        // 未定义变量
+        "no-undef": 2,
+
+        // 变量定义了但未使用
+        "no-unused-vars": 1,
+
+        // Symbol 不需要 new 关键字
+        "no-new-symbol": 2,
+
+        // 重复定义
+        "no-redeclare": 2,
+
+        // 不使用 with 关键字
+        "no-with": 2,
+
+        // 实例化类时应该使用 new 关键字
+        "new-cap": 2,
+
+        // 禁用 arguments.caller 和 arguments.callee
+        "no-caller": 2,
+
+        // 禁用 eval
+        "no-eval": 2,
+
+        // 禁止扩展原生类
+        "no-extend-native": 2,
+
+        // 禁止 case 击穿
+        "no-fallthrough": 2,
+
+        // 禁用隐示 eval 语句
+        "no-implied-eval": 2,
+
+        // 禁用 label 语法
+        "no-labels": 2,
+
+        // 禁用独立的块
+        "no-lone-blocks": 2,
+
+        // 禁止在循环中定义函数
+        "no-loop-func": 2,
+
+        // 校验多余空格
+        "no-multi-spaces": 1,
+
+        // 禁止与自己比较
+        "no-self-compare": 2,
+
+        // 禁止没有更新的循环条件
+        "no-unmodified-loop-condition": 2,
+
+        // 校验无效的表达式
+        "no-unused-expressions": [1, { "allowTernary": true }],
+
+        // 校验无效的返回
+        "no-void": 2,
+
+        // 语句后的分号
+        "semi": [2, "always"],
+
+        // 无效的 typeof 判断
+        "valid-typeof": 2,
+
+        // 指定数组的元素之间要以空格隔开(,后面):
+        // - never参数：[ 之前和 ] 之后不能带空格，
+        // - always参数：[ 之前和 ] 之后必须带空格
+        "array-bracket-spacing": [2, "never"],
+
+        // 在块级作用域外访问块内定义的变量是否报错提示
+        "block-scoped-var": 1,
+
+        // if while function 后面的{必须与if在同一行，java风格。
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+
+        // 数组和对象键值对最后一个逗号:
+        // - never参数：不能带末尾的逗号,
+        // - always参数：必须带末尾的逗号，
+        // - always-multiline：多行模式必须带逗号，单行模式不能带逗号
+        "comma-dangle": [2, "never"],
+
+        // 控制逗号前后的空格
+        "comma-spacing": [2, { "before": false, "after": true }],
+
+        // 控制逗号在行尾出现还是在行首出现
+        // http://eslint.org/docs/rules/comma-style
+        "comma-style": [2, "last"],
+
+        // 以方括号取对象属性时，[ 后面和 ] 前面是否需要空格, 可选参数 never, always
+        "computed-property-spacing": [2, "never"],
+
+        // switch语句强制default分支，也可添加 // no default 注释取消此次警告
+        "default-case": 2,
+
+        // 强制object.key 中 . 的位置，参数:
+        // - property，'.'号应与属性在同一行
+        // - object, '.' 号应与对象名在同一行
+        "dot-location": [2, "property"],
+
+        // 文件末尾强制换行
+        "eol-last": 2,
+
+        // 方法定义风格，参数：
+        // - declaration: 强制使用方法声明的方式，function f(){} e.g [2, "declaration"]
+        // - expression：强制使用方法表达式的方式，var f = function() {}  e.g [2, "expression"]
+        // - allowArrowFunctions: declaration风格中允许箭头函数。 e.g [2, "declaration", { "allowArrowFunctions": true }]
+        "func-style": 0,
+
+        // 在 for-in 中使用 hasOwnProperty 过滤
+        "guard-for-in": 2
+    }
+}
