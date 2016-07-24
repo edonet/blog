@@ -69,6 +69,16 @@
         "$": true
     },
 
+    "plugins": [
+        "react"
+    ],
+
+    "settings": {
+        "react": {
+            "pragma": "React",  // Pragma to use, default to "React"
+            "version": "15.0" // React version, default to the latest React stable release
+        }
+    },
 
     "parserOptions": {
 
@@ -157,6 +167,10 @@
         }
     },
 
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
 
     "rules": {
 
@@ -205,6 +219,12 @@
         // 禁用 arguments.caller 和 arguments.callee
         "no-caller": 2,
 
+        // 允许 console
+        "no-console": 0,
+
+        // 允许 debug
+        "no-debugger": 0,
+
         // 禁用 eval
         "no-eval": 2,
 
@@ -236,7 +256,7 @@
         "no-unmodified-loop-condition": 2,
 
         // 校验无效的表达式
-        "no-unused-expressions": [1, { "allowTernary": true }],
+        "no-unused-expressions": [1, { "allowShortCircuit": true, "allowTernary": true }],
 
         // 校验无效的返回
         "no-void": 2,
@@ -292,6 +312,23 @@
         "func-style": 0,
 
         // 在 for-in 中使用 hasOwnProperty 过滤
-        "guard-for-in": 2
+        "guard-for-in": 2,
+
+        /* eslint-plugin-react */
+
+        "react/jsx-boolean-value": 2,
+        "react/jsx-no-undef": 2,
+        "react/jsx-sort-props": 0,
+        "react/jsx-sort-prop-types": 0,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-did-mount-set-state": 2,
+        "react/no-did-update-set-state": 2,
+        "react/no-multi-comp": 2,
+        "react/no-unknown-property": 1,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": 2,
+        "react/self-closing-comp": 2,
+        "react/wrap-multilines": 0
     }
 }
