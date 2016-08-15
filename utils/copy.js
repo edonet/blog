@@ -2,14 +2,41 @@
 
 const
     fs = require('fs'),
-    stat = require('./stat');
+    path = require('path'),
+    stat = require('./stat'),
+    mkdir = require('./mkdir'),
+    readdir = require('./readdir'),
+    all = require('./all');
 
 
 // 异步复制文档
 function copyAsync (src, dist, callback) {
-    stat(src, function (err) {
+    stat(src, (err, stats) => {
         if (err) {
             return callback(err);
+        }
+
+        if (stats.isDirectory()) {
+            return readdir(src, (err, files) => {
+                if (err) {
+                    return callback(err);
+                }
+
+                mkdir(dist, (err) => {
+                    if (err) {
+                        return callback(err);
+                    }
+
+                    all(files)
+                        .resolve((file, next) => {
+                            let srcTemp = path.join(src, file),
+                                distTemp = path.join(dist, file);
+
+                            copyAsync(srcTemp, distTemp, next);
+                        })
+                        .then(callback, callback);
+                });
+            });
         }
 
         try {
@@ -38,13 +65,34 @@ function copySync (src, dist) {
         return false;
     }
 
-    try {
-        let code = fs.readFileSync(src);
+    if (stats.isDirectory()) {
+        let files = readdir(src);
 
-        fs.writeFileSync(dist, code);
-        return true;
-    } catch(e) {
-        console.log(e);
+        files && mkdir(dist) && files.forEach(file => {
+            copySync(path.join(src, file), path.join(dist, file));
+        });
+
+        if (files && mkdir(dist)) {
+            for (let file of files) {
+                let srcTemp = path.join(src, file),
+                    distTemp = path.join(dist, file);
+
+                if (!copySync(srcTemp, distTemp)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
+    } else {
+        try {
+            let code = fs.readFileSync(src);
+
+            fs.writeFileSync(dist, code);
+            return true;
+        } catch(e) {
+            console.log(e);
+        }
     }
 
     return false;
