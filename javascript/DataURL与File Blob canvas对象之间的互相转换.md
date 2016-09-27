@@ -1,6 +1,25 @@
 # DataURL与File，Blob，canvas对象之间的互相转换
 在前端图片处理过程中，常用DataURL/Blob/File/Canvas之间互相转换的api备忘
 
+
+## Blob 路径操作
+
+``` js
+
+    var blob, url;
+
+    // 生成 blob 文件
+    blob = new Blob(['hello world!']);
+
+    // 生成 blobUrl
+    url = window.URL.createObjectURL(blob);
+
+    // 释放 blobUrl
+    window.URL.revokeObjectURL(objectURL);
+
+```
+
+
 ## 获取File列表
 ``` js
 
@@ -163,3 +182,4 @@
     xhr.send(data);
 
 ```
+
