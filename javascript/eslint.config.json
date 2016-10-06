@@ -888,7 +888,7 @@
         "react/forbid-prop-types": 2,
 
         // Prevent usage of dangerous JSX properties
-        "react/no-danger": 2,
+        "react/no-danger": 0,
 
         // Prevent usage of deprecated methods
         "react/no-deprecated": 2,
