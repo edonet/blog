@@ -53,6 +53,7 @@
     $ git merge <branch name> # 将指定分支合并到当前分支
     $ git branch –d <branch name> # 删除指定分支
     $ git push origin :<branch name> # 删除远程分支
+    $ git fetch -p origin # 更新远程分支
 ```
 
 ## 标签操作
