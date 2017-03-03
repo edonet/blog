@@ -1,0 +1,516 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"projects"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"run",
+				"run_command"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"proj",
+				"projects"
+			],
+			[
+				"on_",
+				"on_select_project"
+			],
+			[
+				"lo",
+				"load_json_file"
+			],
+			[
+				"pack",
+				"package_path"
+			],
+			[
+				"try",
+				"try\tTry/Except/Finally"
+			],
+			[
+				"tr",
+				"target"
+			],
+			[
+				"re",
+				"resolve"
+			],
+			[
+				"pac",
+				"package"
+			],
+			[
+				"pa",
+				"packages"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Config",
+					""
+				],
+				[
+					"Install",
+					""
+				]
+			],
+			[
+				"Config",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Install",
+					""
+				],
+				[
+					"Packages/JavaScript/JavaScript.sublime-build",
+					""
+				],
+				[
+					"Packages/JavaScript/JavaScript.sublime-build",
+					"Start"
+				],
+				[
+					"Packages/JavaScript/JavaScript.sublime-build",
+					"Exit"
+				]
+			],
+			[
+				"Install",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages: Config",
+					""
+				],
+				[
+					"Packages: Install",
+					""
+				]
+			],
+			[
+				"Packages: Config",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages: Config",
+					""
+				],
+				[
+					"Packages: Install",
+					""
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					""
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Kill Node"
+				]
+			],
+			[
+				"Packages/Erik/Terminal.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages: Config",
+					""
+				],
+				[
+					"Packages: Install",
+					""
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					""
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"List"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Kill Node"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Webpack"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Server"
+				]
+			],
+			[
+				"Packages/Erik/Terminal.sublime-build",
+				"Kill Node"
+			]
+		],
+		[
+			[
+				[
+					"Packages: Config",
+					""
+				],
+				[
+					"Packages: Install",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					""
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"List"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Kill Node"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Webpack"
+				],
+				[
+					"Packages/Erik/Terminal.sublime-build",
+					"Server"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 190.0,
+		"history":
+		[
+			"window.extract_variables()",
+			"window.run_command('subl', {'args': ['-n'] })",
+			"window.run_command('subl', {'args': ['-v', '$file'] })",
+			"window.run_command('subl', {'args': ['-v'] })",
+			"window.run_command('subl', {'cmd': '-v' })",
+			"window.run_command('switch_project')",
+			"window.run_command('exec', { 'cmd': ['subl'], 'path': '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'shell': True })",
+			"window.run_command('exec', { 'cmd': ['subl'], 'path': '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'})",
+			"window.run_command('exec', { 'cmd': ['subl'], 'path': '/usr/local/bin:/usr/bin'})",
+			"view.run_command('exec', { 'cmd': ['subl'], 'path': '/usr/local/bin:/usr/bin'})",
+			"window.run_command('exec', { 'cmd': ['subl'], 'path': '/usr/local/bin:/usr/bin'})",
+			"window.run_command('exec', { 'cmd': ['subl']})",
+			"window.run_command('switch_project')",
+			"window.run_command('show_overlay', {'overlay': 'goto', 'items': ['abc', 'ced']})",
+			"window.run_command('show_overlay', {'items': ['abc', 'ced']})",
+			"window.run_command('show_overlay', {items: ['abc', 'ced']})",
+			"window.run_command('show_overlay', {items: ['abc', 'ced'])",
+			"window.run_command('switch_project')",
+			"len([])",
+			"window.run_command('switch_project')",
+			"view.run_command('switch_project')",
+			"help(window)",
+			"window.find_sourses",
+			"window.find_sourse",
+			"st = sublime.load_resource('/Users/lifx/Library/Application\\ Support/Sublime\\ Text\\ 3/Local/Session.sublime_session')",
+			"st.has('folder_history')",
+			"st.has('workspaces')",
+			"st.get('workspaces')",
+			"st",
+			"st = sublime.load_settings('Session.sublime_session');",
+			"sublime.load_settings('Session.sublime_session');",
+			"window.run_command('close_workspace')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/lifx/web/blog"
+	],
+	"file_history":
+	[
+		"/Users/lifx/web/packages/Settings/.gitconfig",
+		"/Users/lifx/web/Packages/Erik/switch_project.py",
+		"/Users/lifx/web/Packages/Erik/subl_command.py",
+		"/Users/lifx/web/packages/Erik/Default (OSX).sublime-keymap",
+		"/Users/lifx/web/packages/Erik/Terminal.sublime-build",
+		"/Users/lifx/web/packages/Settings/.bash_profile",
+		"/Users/lifx/web/packages/JavaScript/JavaScript.sublime-build",
+		"/Users/lifx/web/packages/Sass/Sass.sublime-build",
+		"/Users/lifx/web/packages/Settings/.eslintrc",
+		"/Users/lifx/web/packages/bin/config.js",
+		"/Users/lifx/web/packages/bin/install.js",
+		"/Users/lifx/web/packages/packages.sublime-project",
+		"/Users/lifx/web/packages/Erik/Preferences.sublime-settings",
+		"/Users/lifx/web/Packages/bin/config.js",
+		"/Users/lifx/web/packages/package.json",
+		"/Users/lifx/web/packages/npm-debug.log",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/lifx/Downloads/httpd-vhosts.conf",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/lifx/web/packages/Settings/httpd-vhosts.conf ",
+		"/Users/lifx/edoner/packages/Settings/.bash_profile",
+		"/Users/lifx/www/env",
+		"/Users/lifx/edoner/packages/Settings/hosts",
+		"/Users/lifx/edoner/packages/Settings/httpd-vhosts.conf ",
+		"/Users/lifx/edoner/repo/meditor/httpd-vhosts.conf ",
+		"/Users/lifx/edoner/packages/Settings/.vimrc",
+		"/Users/lifx/edoner/packages/Settings/.eslintrc",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/sublimelinter.py",
+		"/Users/lifx/edoner/packages/Setting/hosts",
+		"/Users/lifx/edoner/packages/Setting/.eslintrc",
+		"/Users/lifx/edoner/packages/Setting/eslint.json",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/commands.py",
+		"/Users/lifx/Library/Application Support/Sublime Text 3/Packages/SublimeLinter-eslint/linter.py",
+		"/Users/lifx/edoner/packages/packages.sublime-project",
+		"/Users/lifx/edoner/repo/repo.sublime-project"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"load_json_file",
+			"packages",
+			"target",
+			"mklinkCmd",
+			"package",
+			"config",
+			"passport",
+			"yf",
+			"mobilecheckroom",
+			"mobilehouseinspection",
+			"passport",
+			"yf",
+			"mobilecheckroom",
+			"mobilecheckroom.com",
+			"appcontractor",
+			"appcheckroom",
+			"dummy-host.example",
+			"\"",
+			"*",
+			"\"",
+			"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+			"、",
+			"3",
+			"##########################################"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 239.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/www/appcontractor/appcontractor.sublime-project"
+			],
+			[
+				"app",
+				"~/www/appcheckroom/appcheckroom.sublime-project"
+			],
+			[
+				"rep",
+				"~/web/repo/repo.sublime-project"
+			],
+			[
+				"repo",
+				"~/web/repo/repo.sublime-project"
+			],
+			[
+				"appc",
+				"~/www/appcontractor/appcontractor.sublime-project"
+			],
+			[
+				"packa",
+				"~/web/packages/packages.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
