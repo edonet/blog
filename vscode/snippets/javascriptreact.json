@@ -1,0 +1,123 @@
+{
+    /*
+     *********************************
+     * Comment
+     *********************************
+     */
+
+    "use strict": {
+        "prefix": "use",
+        "body": [
+            "/**",
+            " *****************************************",
+            " * Created by lifx",
+            " * Created on ${1:date}",
+            " *****************************************",
+            " */",
+            "'use strict';$0"
+        ],
+        "description": "use strict"
+    },
+
+    "block commemt": {
+        "prefix": "@comment",
+        "body": [
+            "/**",
+            " *****************************************",
+            " * $1",
+            " *****************************************",
+            " */$0"
+        ],
+        "description": "Print block comment"
+    },
+
+
+    /*
+     *********************************
+     * syntax
+     *********************************
+     */
+    "import": {
+        "prefix": "import:from",
+        "body": "import ${2:var} from '${1:name}';",
+        "description": "import variable from module"
+    },
+
+
+    /*
+     *********************************
+     * React
+     *********************************
+     */
+    "import React": {
+        "prefix": "import:React",
+        "body": "import React from 'react';",
+        "description": "import React"
+    },
+
+    "import Component": {
+        "prefix": "import:Comporent",
+        "body": "import React, { Component } from 'react';",
+        "description": "import Component"
+    },
+
+    "Component": {
+        "prefix": "class:Component",
+        "body": "class ${1:className} extends Component {$2}",
+        "description": "React Component"
+    },
+
+    "Constructor": {
+        "prefix": "constructor",
+        "body": "constructor(props, ...args) {\n\tsuper(props, ...args);$1\n}",
+        "description": "Component constructor"
+    },
+
+    "componentWillMount": {
+        "prefix": "componentWillMount",
+        "body": "componentWillMount() {$0}",
+        "description": "Component will mount"
+    },
+
+    "render": {
+        "prefix": "render",
+        "body": "render() {$0}",
+        "description": "Component render"
+    },
+
+    "componentDidMount": {
+        "prefix": "componentDidMount",
+        "body": "componentDidMount() {$0}",
+        "description": "Component did mount"
+    },
+
+    "componentWillReceiveProps": {
+        "prefix": "componentWillReceiveProps",
+        "body": "componentWillReceiveProps(props) {$0}",
+        "description": "Component will receive props"
+    },
+
+    "shouldComponentUpdate": {
+        "prefix": "shouldComponentUpdate",
+        "body": "shouldComponentUpdate(props${1:, state}) {$0}",
+        "description": "Component should update"
+    },
+
+    "componentWillUpdate": {
+        "prefix": "componentWillUpdate",
+        "body": "componentWillUpdate(props${1:, state}) {$0}",
+        "description": "Component will update"
+    },
+
+    "componentDidUpdate": {
+        "prefix": "componentDidUpdate",
+        "body": "componentDidUpdate() {$0}",
+        "description": "Component did update"
+    },
+
+    "componentWillUnmount": {
+        "prefix": "componentWillUnmount",
+        "body": "componentWillUnmount() {$0}",
+        "description": "Component will unmount"
+    }
+}

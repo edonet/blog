@@ -300,10 +300,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/lifx/web/blog"
+		"/Users/lifx/web/blog",
+		"/Users/lifx/web/blog/article",
+		"/Users/lifx/web/blog/article/webpack"
 	],
 	"file_history":
 	[
+		"/Users/lifx/web/blog/article/shell.md",
+		"/Users/lifx/web/blog/notes/常用svn命令.md",
 		"/Users/lifx/web/packages/Settings/.gitconfig",
 		"/Users/lifx/web/Packages/Erik/switch_project.py",
 		"/Users/lifx/web/Packages/Erik/subl_command.py",
@@ -357,6 +361,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"echo",
+			"foo",
+			"Hello I am a function",
+			"print_something",
 			"load_json_file",
 			"packages",
 			"target",

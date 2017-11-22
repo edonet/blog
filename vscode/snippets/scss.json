@@ -1,0 +1,25 @@
+{
+    "charset": {
+        "prefix": "@charset",
+        "body": [
+            "/**",
+            " *****************************************",
+            " * Created by lifx",
+            " * Created on ${1:date}",
+            " *****************************************",
+            " */",
+            "@charset \"utf-8\";"
+        ],
+        "description": "Charset utf-8"
+    },
+    "import": {
+        "prefix": "@import",
+        "body": "@import \"${1:name}\";",
+        "description": "Import SASS Module"
+    },
+    "at-root": {
+        "prefix": "@at-root",
+        "body": "@at-root",
+        "description": "At Root"
+    }
+}
